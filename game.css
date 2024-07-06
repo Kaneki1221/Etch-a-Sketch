@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    border: 1px solid rgb(223, 12, 12);
+}
+
+.mydiv {
+    width: calc(100% / 16); /* Calculates 1/16th of the container width */
+    height: calc(100% / 16); /* Calculates 1/16th of the container height */
+    border: 1px solid rebeccapurple;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    --random-color: #ffffff; /* Default random color (white) */
+}
+
+.mydiv:hover {
+    --random-color: #'+Math.floor(Math.random()*16777215).toString(16); /* Random color */
+}
+
