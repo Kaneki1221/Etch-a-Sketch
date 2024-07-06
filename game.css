@@ -1,21 +1,31 @@
+
+
 #container {
+    margin-top: 80px;
     display: flex;
+    justify-content: center;
+    border: 1px solid rgb(255, 0, 0); 
+    width: 1000px;
+    height: 1000px;
     flex-wrap: wrap;
-    width: 960px;
-    height: 960px;
-    border: 1px solid rgb(223, 12, 12);
+}
+
+#header{
+
+    display: flex;
+    
+    justify-content: center;
+    background-color: rgb(21, 102, 75);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 10px;
 }
 
 .mydiv {
-    width: calc(100% / 16); /* Calculates 1/16th of the container width */
-    height: calc(100% / 16); /* Calculates 1/16th of the container height */
-    border: 1px solid rebeccapurple;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
-    --random-color: #ffffff; /* Default random color (white) */
-}
-
-.mydiv:hover {
-    --random-color: #'+Math.floor(Math.random()*16777215).toString(16); /* Random color */
+    width: calc(100% / 16); 
+    height: calc(100% / 16); 
+   
+    transition: background-color 0.3s ease; 
+    
 }
 
