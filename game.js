@@ -2,8 +2,8 @@ function createGrid() {
   var gridSize = parseInt(document.getElementById('gridSizeInput').value);
   
   
-  if (isNaN(gridSize) || gridSize <= 0) {
-    alert("Please enter a valid grid size (greater than 0).");
+  if (isNaN(gridSize) || gridSize <= 0 || gridSize >100) {
+    alert("Please enter a valid grid size (1-100).");
     return;
   }
 
