@@ -1,9 +1,19 @@
-for (var i = 0; i < 16; i++) {
-    for (var j = 0; j < 16; j++) {
+function createGrid() {
+    var gridSize = parseInt(document.getElementById('gridSizeInput').value);
+    if (isNaN(gridSize) || gridSize <= 0) {
+      alert("Please enter a valid grid size (greater than 0).");
+      return;
+    }
+
+
+for (var i = 0; i < gridSize; i++) {
+    for (var j = 0; j < gridSize; j++) {
         var newDiv = document.createElement('div');
         newDiv.className = "mydiv";
         var container = document.getElementById('container');
         container.appendChild(newDiv);
+        
+        
         
     }
 }
